@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Github Profiles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="stylee.css" />
+        <script src="appp.js" defer></script>
+    </head>
+    <body>
+        <h2>Search for a GitHub User Profile</h2>
+        <p>Enter a GitHub username below to view profile details like name, bio, and repositories.</p>
+
+        <form id="form" onsubmit="return formSubmit()">
+            <input 
+                type="text" 
+                autofocus
+                autocomplete="off"
+                placeholder="Search a Github Username here"
+                id="search"
+            />
+        </form>
+
+        <div id="main"></div>
+    </body>
+</html>

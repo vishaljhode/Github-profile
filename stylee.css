@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #2a2a72, #009ffd);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    transition: background 0.5s ease-in-out;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+input {
+    background: linear-gradient(135deg, #4c2885, #7b2ff7);
+    width: 400px;
+    padding: 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    transform: scale(1.02);
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 8px #7b2ff7;
+}
+
+.card {
+    background: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
+    display: flex;
+    max-width: 800px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.avatar {
+    height: 150px;
+    width: 150px;
+    border: 10px solid #2a2a72;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.user {
+    color: #eee;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.user h2 {
+    margin-top: 0;
+}
+
+.user ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+.user ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.user ul li strong {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.repo {
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(135deg, #2a2a72, #4c11ac);
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 6px 12px;
+    margin: 0 6px 6px 0;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.repo:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(123, 47, 247, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(123, 47, 247, 0);
+    }
+}
